@@ -1,0 +1,13 @@
+name: "Full Scan"
+description: >
+  Runs ALL attack modules regardless of success.
+  Builds a complete coverage report — best for research
+  and documentation purposes.
+stop_on_success: false
+steps:
+  - attack: direct_injection
+  - attack: token_smuggling
+  - attack: roleplay
+  - attack: many_shot
+  - attack: competing_objectives
+  - attack: system_prompt_extraction

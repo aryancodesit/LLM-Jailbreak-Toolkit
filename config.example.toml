@@ -1,0 +1,30 @@
+# LLM Jailbreak Toolkit — Example Configuration
+# Copy this file to config.toml and fill in your values.
+# NEVER commit config.toml — it is in .gitignore.
+
+[target]
+# litellm model string — see README for full list
+# Free options: groq/llama-3.1-8b-instant, gemini/gemini-1.5-flash, ollama/llama3
+model   = "groq/llama-3.1-8b-instant"
+api_key = "YOUR_API_KEY_HERE"
+max_tokens  = 512
+temperature = 0.7
+
+[budget]
+# Hard spend cap per session (USD). Prevents accidental overspend.
+max_cost_usd = 1.0
+warn_at_usd  = 0.50
+
+[evaluator]
+# "keyword"   → instant, free, ~65% accuracy
+# "llm_judge" → accurate, costs tokens, ~90% accuracy
+# "chain"     → keyword first, escalates to judge if uncertain (recommended)
+mode         = "chain"
+judge_model  = "groq/llama-3.1-8b-instant"
+
+[db]
+# SQLite database path — added to .gitignore, never committed
+path = "results.db"
+
+[logging]
+level = "INFO"

@@ -1,0 +1,11 @@
+name: "Default Escalation"
+description: >
+  Starts with the lowest-friction attack and escalates
+  through increasing complexity. Stops at first success.
+stop_on_success: true
+steps:
+  - attack: direct_injection
+  - attack: token_smuggling
+  - attack: roleplay
+  - attack: many_shot
+  - attack: competing_objectives

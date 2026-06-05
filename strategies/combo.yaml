@@ -1,0 +1,11 @@
+name: "Combo Chains"
+description: >
+  Stacks two attack techniques together for layered obfuscation.
+  e.g. Base64-encode the request, THEN wrap it in a DAN persona.
+  Two defensive layers must both fail for the attack to be blocked.
+stop_on_success: true
+steps:
+  - attack: direct_injection
+  - combo: [token_smuggling, roleplay]
+  - combo: [many_shot, token_smuggling]
+  - combo: [competing_objectives, roleplay]

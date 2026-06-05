@@ -1,0 +1,46 @@
+# ── Sensitive / personal ──────────────────────────────────────
+config.toml
+.env
+*.env
+
+# ── Database & output ─────────────────────────────────────────
+*.db
+*.db-shm
+*.db-wal
+reports_output/
+results_export.json
+
+# ── Python ────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+.eggs/
+*.egg
+pip-wheel-metadata/
+.installed.cfg
+
+# ── Virtual environments ──────────────────────────────────────
+venv/
+.venv/
+env/
+.env/
+ENV/
+
+# ── IDEs & editors ────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# ── Testing ───────────────────────────────────────────────────
+.pytest_cache/
+.coverage
+htmlcov/

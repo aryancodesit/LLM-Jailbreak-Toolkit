@@ -1,0 +1,10 @@
+name: "Stealth (Low Footprint)"
+description: >
+  Only uses indirect and encoded attacks.
+  Avoids obvious jailbreak phrases that trigger
+  safety classifiers. Best against well-tuned models.
+stop_on_success: true
+steps:
+  - attack: token_smuggling
+  - attack: competing_objectives
+  - attack: many_shot
