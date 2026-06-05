@@ -23,6 +23,8 @@ This toolkit automates that testing process, helping security teams:
 - Generate structured disclosure reports for remediation
 - Reproduce findings consistently across model versions
 
+> I built an open-source AI red-teaming toolkit — it's basically a penetration testing framework for LLMs, with a terminal UI, six attack modules from published research, and automated report generation.
+
 This is the same class of work done by [NVIDIA Garak](https://github.com/NVIDIA/garak),
 [Microsoft PyRIT](https://github.com/Azure/PyRIT), and Anthropic's internal red team —
 packaged into an accessible, interactive interface.
